@@ -6,6 +6,14 @@ public class Serie extends Titulo implements Classificavel {
     private boolean ativa;
     private int duracaoEpisodioEmMinuto;
 
+    public Serie(String titulo, int anoDeLancamento, int numeroDeEpisodios, int numeroDeTemporadas, boolean ativa, int duracaoEpisodioEmMinuto) {
+        super(titulo, anoDeLancamento, numeroDeEpisodios*duracaoEpisodioEmMinuto);
+        this.numeroDeEpisodios = numeroDeEpisodios;
+        this.numeroDeTemporadas = numeroDeTemporadas;
+        this.ativa = ativa;
+        this.duracaoEpisodioEmMinuto = duracaoEpisodioEmMinuto;
+    }
+
     public boolean isAtiva() {
         return ativa;
     }
