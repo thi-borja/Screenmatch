@@ -1,11 +1,9 @@
 package br.com.thborja.screenmatch.modelos;
 
-import com.google.gson.annotations.SerializedName;
+import br.com.thborja.screenmatch.excecoes.ErroDeConversaoDeAnoException;
 
 public class Titulo implements Comparable<Titulo> {
-    @SerializedName("Title")
     private String titulo;
-    @SerializedName("Year")
     private int anoDeLancamento;
     private boolean isInclusoNoPlano;
     private int numDeAvaliacoes;
@@ -16,6 +14,17 @@ public class Titulo implements Comparable<Titulo> {
         this.titulo = titulo;
         this.anoDeLancamento = anoDeLancamento;
         this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    public Titulo(TituloOMDB tituloOMDB) throws ErroDeConversaoDeAnoException {
+        this.titulo = tituloOMDB.title();
+
+        if (tituloOMDB.year().length()>4){
+            throw new ErroDeConversaoDeAnoException("Ha algum problema no valor \"ano\", isso pode acontecer em alguns titulos mais desconhecidos" );
+        }
+
+        this.anoDeLancamento = Integer.parseInt(tituloOMDB.year());
+        this.duracaoEmMinutos = Integer.parseInt(tituloOMDB.runtime().substring(0,3));
     }
 
     public String getTitulo() {
@@ -85,6 +94,10 @@ public class Titulo implements Comparable<Titulo> {
     @Override
     public String toString() {
         return  "Titulo: " + titulo + "\n" +
-                "Lancamento: " + anoDeLancamento + "\n";
+                "Lancamento: " + anoDeLancamento + "\n" +
+                "Duracao: " + duracaoEmMinutos + "min";
     }
+
+
+
 }

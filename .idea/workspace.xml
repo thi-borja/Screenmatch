@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="20115dff-6d98-4e61-ae95-e99eeeb84290" name="Changes" comment="Screenmatch">
-      <change afterPath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/teste/TesteBusca.java" afterDir="false" />
+    <list default="true" id="20115dff-6d98-4e61-ae95-e99eeeb84290" name="Changes" comment="Screenmatch com busca e API integrada">
+      <change afterPath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/excecoes/ErroDeConversaoDeAnoException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/modelos/TituloOMDB.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Screenmatch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Screenmatch.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/modelos/Titulo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/modelos/Titulo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/teste/TesteFilme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/teste/TesteFilme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/teste/TesteBusca.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/br/com/thborja/screenmatch/teste/TesteBusca.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,10 +45,15 @@
     "last_opened_file_path": "C:/Users/thigr/Downloads/gson-2.10.1.jar",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "project.propVCSSupport.Mappings"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.thborja.screenmatch.modelos" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.TesteBusca">
     <configuration name="TesteBusca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.com.thborja.screenmatch.teste.TesteBusca" />
@@ -99,11 +105,19 @@
       <option name="project" value="LOCAL" />
       <updated>1683598728250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Screenmatch com busca e API integrada">
+      <created>1683681974126</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683681974126</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Screenmatch" />
-    <option name="LAST_COMMIT_MESSAGE" value="Screenmatch" />
+    <MESSAGE value="Screenmatch com busca e API integrada" />
+    <option name="LAST_COMMIT_MESSAGE" value="Screenmatch com busca e API integrada" />
   </component>
 </project>
