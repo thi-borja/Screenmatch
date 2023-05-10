@@ -3,6 +3,7 @@ package br.com.thborja.screenmatch.teste;
 import br.com.thborja.screenmatch.modelos.*;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class TesteFilme {
     public static void main(String[] args) {
@@ -76,6 +77,15 @@ public class TesteFilme {
                 System.out.println(item.getTitulo() + " " + star.estrelar((Filme) item));
             }
         }
+
+        ArrayList<String> listaDeNomes = new ArrayList<>();
+        for (Titulo item: listaDeTitulos){
+            listaDeNomes.add(item.getTitulo());
+        }
+        Collections.sort(listaDeTitulos);
+        //APESAR DE SORT COLOCAR EM ORDEM ALFABETICA
+        //EU ALTEREI O COMPARABLE NA CLASSE TITULO!!!
+        System.out.println(listaDeTitulos);
 
 
 
